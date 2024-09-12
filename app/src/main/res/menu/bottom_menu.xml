@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home">
+
+    </item>
+    <item
+        android:id="@+id/bottom_chatbot"
+        android:icon="@drawable/baseline_chat_24"
+        android:title="Chat Bot" >
+
+    </item>
+    <item
+        android:id="@+id/bottom_profile"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Profile"></item>
+
+</menu>
