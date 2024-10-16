@@ -18,9 +18,8 @@ import com.example.bottom_drawer.HomeFragment;
 import com.example.bottom_drawer.SettingsFragment;
 import com.example.bottom_drawer.ShareFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
-
-/** @noinspection ALL*/
+import com.google.android.material.navigation.NavigationView
+    
 public class homepage extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawerLayout;
@@ -32,14 +31,13 @@ public class homepage extends AppCompatActivity implements NavigationView.OnNavi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
 
-        Toolbar toolbar = findViewById(R.id.toolbar); //Ignore red line errors
+        Toolbar toolbar = findViewById(R.id.toolbar); 
         setSupportActionBar(toolbar);
 
         drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        //bottomnav
         bottomnavigationView = findViewById(R.id.bottomnavigationView);
 
         bottomnavigationView.setOnNavigationItemSelectedListener(nav_listner);
@@ -107,11 +105,6 @@ public class homepage extends AppCompatActivity implements NavigationView.OnNavi
         {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
         }
-//            else if(id == R.id.nav_logout)
-//            {
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
-//            }
-
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
