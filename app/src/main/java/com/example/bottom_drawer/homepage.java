@@ -39,7 +39,6 @@ public class homepage extends AppCompatActivity implements NavigationView.OnNavi
         navigationView.setNavigationItemSelectedListener(this);
 
         bottomnavigationView = findViewById(R.id.bottomnavigationView);
-
         bottomnavigationView.setOnNavigationItemSelectedListener(nav_listner);
 
 
